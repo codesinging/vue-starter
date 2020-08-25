@@ -6,6 +6,9 @@ import './plugins/element.js'
 // Import Vue extensions
 import './utils/vue-extensions'
 
+// Import VueLS
+import './utils/vue-ls'
+
 // Import axios
 import './plugins/axios'
 
