@@ -1,27 +1,30 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+
+import routes from './routes'
+import auth from '@/utils/auth'
+import config from '@/configs/app.config'
 
 Vue.use(VueRouter)
 
-  const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
-
 const router = new VueRouter({
   routes
+})
+
+router.beforeEach((to, from, next) => {
+    // Set page title
+    document.title = (to.meta.title?to.meta.title + '-' : '') + (config.subName ? config.subName+'-':'') + config.name
+
+    // Check authentication
+    if (to.meta.auth){
+        if (auth.check()){
+            next()
+        } else {
+            next('/auth')
+        }
+    } else {
+        next()
+    }
 })
 
 export default router
