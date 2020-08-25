@@ -21,8 +21,8 @@ const check = () => {
     const user = Vue.ls.get(USER)
 
     if (token != null && user != null) {
-        store.commit('token', token)
-        store.commit('user', user)
+        store.commit(TOKEN, token)
+        store.commit(USER, user)
 
         console.log(TAG, 'User authenticated from local storage')
         return true
@@ -102,5 +102,5 @@ const get = (key, def) => {
 }
 
 export default {
-    check, login, logout, token, user, update, get
+    check, login, logout, token, user, update, get, loginPage: config.loginPage
 }

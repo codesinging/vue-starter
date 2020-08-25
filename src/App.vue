@@ -1,15 +1,12 @@
 <template>
-  <div id="app">
-
-  </div>
+    <div id="app" class="h-full overflow-hidden container mx-auto bg-white">
+        <router-view></router-view>
+    </div>
 </template>
 
 <script>
-
 export default {
-  name: 'app',
-  components: {
-  }
+    name: 'app',
 }
 </script>
 
