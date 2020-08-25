@@ -1,0 +1,14 @@
+.el-loading-spinner svg {
+    display: inline-block;
+}
+
+.el-switch {
+    .el-loading-spinner {
+        margin-top: -11px;
+
+        .circular {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

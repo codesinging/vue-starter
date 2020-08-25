@@ -1,0 +1,34 @@
+
+.el-card.card-medium {
+    .el-card__header {
+        padding: 14px 16px;
+    }
+
+    .el-card__body {
+        padding: 16px;
+    }
+}
+
+.el-card.card-small {
+    .el-card__header {
+        padding: 10px 12px;
+    }
+
+    .el-card__body {
+        padding: 12px;
+    }
+}
+
+.el-card.card-mini {
+    .el-card__header {
+        padding: 6px 8px;
+    }
+
+    .el-card__body {
+        padding: 8px;
+    }
+}
+
+.el-card.p-0 > .el-card__body {
+    padding: 0 !important;
+}

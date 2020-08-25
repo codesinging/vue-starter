@@ -1,0 +1,31 @@
+.el-dialog__header {
+    padding: 16px;
+}
+
+.el-dialog__title {
+    font-weight: normal;
+}
+
+.el-dialog__body {
+    padding: 20px;
+    border-top: #eee solid 1px;
+    border-bottom: #eee solid 1px;
+}
+
+.el-dialog__footer {
+    padding: 12px 20px;
+    height: auto;
+}
+
+.el-dialog__headerbtn .el-dialog__close {
+    font-size: 18px;
+}
+
+.el-dialog__footer .el-checkbox:last-of-type {
+    margin-right: 30px;
+}
+
+.el-dialog__body .el-form {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
