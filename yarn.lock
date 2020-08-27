@@ -2046,6 +2046,19 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.npm.taobao.org/boolbase/download/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
+bootstrap-icons-font@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/bootstrap-icons-font/-/bootstrap-icons-font-1.0.2.tgz#c74c9ccf9bde3961373625a6cfe039217bd9db1b"
+  integrity sha512-0/p3IDcHPr0IuDaEB0bry5ql/a7zMUfzeKvB0pz0CGvYk9w3gkR2G9JZcfDD/wTUTK3vr99APgwomP6GM6AwkQ==
+  dependencies:
+    bootstrap "^4.5.2"
+    vue "^2.6.12"
+
+bootstrap@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.npmjs.org/bootstrap/-/bootstrap-4.5.2.tgz#a85c4eda59155f0d71186b6e6ad9b875813779ab"
+  integrity sha512-vlGn0bcySYl/iV+BGA544JkkZP5LB3jsmkeKLFQakCOwCM3AOk7VkldBz4jrzSe+Z0Ezn99NVXa1o45cQY4R6A==
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.npm.taobao.org/brace-expansion/download/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -8825,7 +8838,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue@^2.6.11:
+vue@^2.6.11, vue@^2.6.12:
   version "2.6.12"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha1-9evU+mvShpQD4pqJau1JBEVskSM=
